@@ -1,0 +1,15 @@
+{
+  "name": "yarn-minify",
+  "version": "1.0.0",
+  "description": "Update a yarn lockfile to include the minimum number of versions of each package",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "Dustin J. Mitchell <dustin@mozilla.com>",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "@yarnpkg/lockfile": "1.1.0",
+    "semver": "^7.3.2"
+  }
+}
