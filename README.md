@@ -69,3 +69,10 @@ minify('yarn.lock', {
   ignore: pkg => pkg.startsWith('@hapi/'),
 });
 ```
+
+Alternately, from the command line `yarn-minify` will minify a `yarn.lock` in the current working directory:
+
+```shell
+$ yarn-minify
+$ git diff
+```

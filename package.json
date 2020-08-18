@@ -2,7 +2,8 @@
   "name": "yarn-minify",
   "version": "1.0.0",
   "description": "Update a yarn lockfile to include the minimum number of versions of each package",
-  "main": "src/main.js",
+  "main": "index.js",
+  "bin": "./main.js",
   "scripts": {
     "test": "ava"
   },
