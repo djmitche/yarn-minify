@@ -53,7 +53,5 @@ const minify = (filename, {outputFilename = filename, ignore = package => false}
   fs.writeFileSync(outputFilename || filename, lockfile.stringify(object), 'utf8');
 };
 
-minify('/home/dustin/p/taskcluster/yarn.lock', {
-  outputFilename: '/home/dustin/p/taskcluster/yarn.lock.new',
-  ignore: () => true,
-});
+module.exports = minify;
+module.exports.fs = fs; // for tests
